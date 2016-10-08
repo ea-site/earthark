@@ -1,2 +1,2 @@
-# index.htmlはダミー
-# JSのみ使用
+# dummy's index.html.
+# JavaScript use only.
