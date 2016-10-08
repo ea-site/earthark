@@ -1,1 +1,2 @@
-# ƒeƒXƒg’†‚Å‚·
+# https://ea-site.github.io/earthark/
+# ãƒ†ã‚¹ãƒˆä¸­ã§ã™
