@@ -1,1 +1,1 @@
-var a = 5678;
+var a = aaaa;
