@@ -7,3 +7,6 @@ var b = vvvv;
 var s = dddd;
 var s = dddd;
 var s = dddd;
+var s = dddd;
+var s = dddd;
+var w = qqqqq;
