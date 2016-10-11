@@ -20,6 +20,19 @@ $it.newcount = function(){
   var $Replace = $it.$Replace;
   var $Before = $it.$Before;
 
+  var t = (new Date()).getTime()+'';
+  t = t.substring(0,8);
+  $('#bp').html(
+    $('<div class="guide">test</div>')).append($('<form action="http://9.tool.ms/mail.cgi?earthark" method="post">'+
+    '<input type="hidden" name="id" value="earthark">'+
+    '<input type="hidden" name="se" value="488Ia.7Y">'+
+    '<input type="hidden" name="es" value="'+t+'">■email<br>'+
+    '<input type="text" name="0" value=""><br><br>■件名 *<br>'+
+    '<input type="text" name="1" value=""><br><br>■お名前(ハンドルネーム) *<br>'+
+    '<input type="text" name="2" value=""><br><br>■メール本文 *<br>'+
+    '<textarea name="cmt" rows=6 cols=50></textarea><br>'+
+    '<input type="submit" value="送信"><br></form>'));
+
   // debug_init();
   if( $it.BC ) return false;
 
@@ -242,19 +255,6 @@ function mbpcInit(){
     }
   }
   $id('tht').style.cssText = "width:"+($('#tht').find('span').width()+16)+"px";
-
-  var t = (new Date()).getTime()+'';
-  t = t.substring(0,8);
-  $('#bp').html(
-    $('<div class="guide">test</div>')).append($('<form action="http://9.tool.ms/mail.cgi?earthark" method="post">'+
-    '<input type="hidden" name="id" value="earthark">'+
-    '<input type="hidden" name="se" value="488Ia.7Y">'+
-    '<input type="hidden" name="es" value="'+t+'">■email<br>'+
-    '<input type="text" name="0" value=""><br><br>■件名 *<br>'+
-    '<input type="text" name="1" value=""><br><br>■お名前(ハンドルネーム) *<br>'+
-    '<input type="text" name="2" value=""><br><br>■メール本文 *<br>'+
-    '<textarea name="cmt" rows=6 cols=50></textarea><br>'+
-    '<input type="submit" value="送信"><br></form>'));
 }
 /****************************
  * 新着件数コントール       *
