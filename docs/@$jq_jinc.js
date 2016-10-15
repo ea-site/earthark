@@ -689,6 +689,7 @@ function aaa(){
     var c = $it.getCookie('checksite-2-VisitCount');
     console.log(sid);
     console.log(c);
+    console.log(document.cookie);
  });
 
 /*
