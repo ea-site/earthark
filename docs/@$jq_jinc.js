@@ -686,7 +686,9 @@ function aaa(){
  $('#bp').append('<iframe src="/mbb/" id="onframe" frameborder="0" name="_frame" style="display:block"></iframe>');
  $('iframe').on('load',function(){
     var sid = $it.getCookie('JSESSIONID');
-    alert(sid);
+    var c = $it.getCookie('checksite-2-VisitCount');
+    console.log(sid);
+    console.log(c);
  });
 
 /*
