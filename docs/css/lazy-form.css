@@ -64,7 +64,7 @@ input[name=mail]:focus {
 input[name=sub],input[name=rem]{
   font-size:14pt;
   margin:0.3em 0.2em 0.3em 0.2em;
-  padding:0.1em 0.8em;
+  padding:0 0.8em;
   border-radius:7px;
   color:#FFF;
   background-color:#09F;
@@ -136,8 +136,8 @@ p{margin:0.8em 0}
 div.doc{
   margin:0.5em 0;
   padding:0.6em;
-  font-size:1em;
-  line-height:1.3em;
+  font-size:0.9em;
+  line-height:1.4em;
   border-radius:10px;
   background-color:#FFF;
 }  
