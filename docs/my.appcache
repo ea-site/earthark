@@ -1,0 +1,9 @@
+CACHE MANIFEST
+#cache clear
+CACHE:
+lazy-form.html
+lazy-form.css
+lazy-form.js
+
+NETWORK:
+*
