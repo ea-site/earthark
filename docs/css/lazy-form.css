@@ -1,5 +1,8 @@
 @charset "UTF-8";
 @media print, screen and (min-width: 640px) {
+a:link{text-decoration:none;}
+a:visited{text-decoration:none;}
+a:hover{text-decoration:underline;}
 body,div,dl,dd{
   margin:0;
   padding:0;
@@ -91,6 +94,9 @@ div.sm{
 }
 /*------------------*/
 @media screen and (max-width: 640px) {
+a:link{text-decoration:none;}
+a:visited{text-decoration:none;}
+a:hover{text-decoration:underline;}
 img{
   max-width: 100%;
   height: auto;
