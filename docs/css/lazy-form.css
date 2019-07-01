@@ -3,15 +3,19 @@
 a:link{text-decoration:none;}
 a:visited{text-decoration:none;}
 a:hover{text-decoration:underline;}
+body{
+  background-image:url("../g/moyo05.gif");
+  background-repeat:repeat;
+}
+
 body,div,dl,dd{
   margin:0;
   padding:0;
   font-family: ヒラギノ角ゴ Pro W3,Hiragino kaku Gothic Pro,メイリオ,Meiryo,MS Pゴシック,MS PGothic,Helvetica,Verdana,Arial,sans-serif;
   font-size:12pt;
   line-height:1.2em;
-  background-color:#FFF;
 }
- 
+
 h1{
   font-weight: normal;
   text-align:center; 
@@ -30,6 +34,7 @@ div#frame{
   color:#111;
   border:1px solid #AAA;
   background-color:#EEE;
+  background-image:url("../g/bg003.gif");
 }
 
 p{margin:0.8em 0}
@@ -39,15 +44,15 @@ div.doc{
   padding:0.6em;
   font-size:10pt;
   line-height:1.4em;
-  background-color:#FFF;
   border-radius:10px;
+  color:#111;
+  background-color:#CDF;
 }  
 div.guide{
   margin:0;
   padding:0;
   font-size:14pt;
   line-height:1.2em;
-  background-color:#EEE;
 }
 input[name=mail]{
   width:100%;
@@ -63,7 +68,7 @@ input[name=mail]:focus {
 }
 input[name=sub],input[name=rem]{
   font-size:14pt;
-  margin:0.3em 0.2em 0.3em 0.2em;
+  margin:0.8em 0.2em 0.3em 0.2em;
   padding:0 0.8em;
   border-radius:7px;
   color:#FFF;
@@ -73,9 +78,8 @@ input[name=sub],input[name=rem]{
 div#error{
   margin:0.8em 0;
   padding:0;
-  font-size:16pt;
+  font-size:14pt;
   color:#E00;
-  background-color:#EEE;
 }
 span{
   font-size:0.8em;
@@ -84,11 +88,9 @@ span{
 div.ea_link{
   margin:1em;
   text-align:center;
-  background-color:#EEE;
 }
 div.sm{
   text-align:center;
-  background-color:#EEE;
 }
 }
 /*------------------*/
@@ -96,6 +98,9 @@ div.sm{
 a:link{text-decoration:none;}
 a:visited{text-decoration:none;}
 a:hover{text-decoration:underline;}
+body{
+  background-image:url("../g/moyo05.gif");
+}
 img{
   max-width: 100%;
   height: auto;
@@ -107,7 +112,6 @@ body,div,input,dl,dd{
   font-family: ヒラギノ角ゴ Pro W3,Hiragino kaku Gothic Pro,メイリオ,Meiryo,MS Pゴシック,MS PGothic,Helvetica,Verdana,Arial,sans-serif;
   font-size:12pt;
   line-height:1.2em;
-  background-color:#FFF;
 }
  
 h1{
@@ -129,7 +133,7 @@ div#frame{
   color:#111;
   font-size:1em;
   border:1px solid #AAA;
-  background-color:#BDe;
+  background-image:url("../g/bg003.gif");
 }
 p{margin:0.8em 0}
 
@@ -139,14 +143,13 @@ div.doc{
   font-size:0.9em;
   line-height:1.4em;
   border-radius:10px;
-  background-color:#FFF;
+  background-color:#CDF;
 }  
 div.guide{
   margin:0;
   padding:0;
   font-size:16pt;
   line-height:1.3em;
-  background-color:#BDe;
 }
 input[name=mail]{
   font-weight: normal;
@@ -165,7 +168,7 @@ input[name=mail]:focus {
 
 input[name=sub],input[name=rem]{
   font-size:14pt;
-  margin:0.3em 0.2em 0.3em 0.2em;
+  margin:0.8em 0.2em 0.3em 0.2em;
   padding:0.1em 0.8em;
   border-radius:7px;
   color:#FFF;
@@ -175,9 +178,8 @@ input[name=sub],input[name=rem]{
 div#error{
   margin:0.8em 0;
   padding:0;
-  font-size:16pt;
+  font-size:14pt;
   color:#E00;
-  background-color:#BDe;
 }
 span{
   font-size:0.8em;
@@ -186,10 +188,8 @@ span{
 div.ea_link{
   margin:1em;
   text-align:center;
-  background-color:#BDe;
 }
 div.sm{
   text-align:center;
-  background-color:#BDe;
 }
 }
