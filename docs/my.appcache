@@ -1,6 +1,4 @@
 CACHE MANIFEST
-#cache clear
-CACHE:
-
+#nocacheing
 NETWORK:
 *
