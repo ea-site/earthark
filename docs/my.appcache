@@ -1,8 +1,6 @@
 CACHE MANIFEST
 #cache clear
 CACHE:
-lazy-form.css
-lazy-form.js
 
 NETWORK:
 *
