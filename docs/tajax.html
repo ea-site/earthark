@@ -1,0 +1,87 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Pragma" content="no-cache">
+<style type="text/css"><!--
+body{ background-color:#e2e2e2; color:#111111; }
+h1{ background-color:#DDFFDD; text-align:center; }
+--></style>
+<title>ajax非同期テスト</title>
+</head>
+<body>
+<h1>ajax非同期テスト</h1>
+
+<div id="ajax-sample">
+</div>
+<div id="ajax-result">
+</div>
+
+<script type="text/javascript">
+
+debug_init();
+
+//
+//*** ajax非同期
+//
+function ajaxload(){
+  var url = 'https://script.google.com/macros/s/AKfycbxgN2h9U0EvOxySZOP-Cz9SKPWAW_Y9Wvf6Jf3igE74UuQXVvs/exec?r=pP4q1dY8'
+  //var url = "getajax.php?url=http://www.perfume-web.jp/&code=utf-8";
+  //var url = "getajax.php?url=http://www.yahoo.co.jp/&code=utf-8";
+  //var url = '@jinc.js';
+  //var url = 'http://www.perfume-web.jp/';
+  
+  var xmlHttp;
+
+  if (!window.XMLHttpRequest){
+	XMLHttpRequest = function () {
+	  try { return new ActiveXObject("Msxml2.XMLHTTP.6.0"); } catch (e) {}
+	  try { return new ActiveXObject("Msxml2.XMLHTTP.3.0"); } catch (e) {}
+	  try { return new ActiveXObject("Msxml2.XMLHTTP"); } catch (e) {}
+	  try { return new ActiveXObject("Microsoft.XMLHTTP"); } catch (e) {}
+	  throw new Error("This browser does not support XMLHttpRequest.");
+	};
+  }
+  xmlHttp = new XMLHttpRequest();
+  xmlHttp.open("GET", url, true);
+  xmlHttp.onreadystatechange = function res(){
+	  if(xmlHttp.readyState == 4 && xmlHttp.status == 200){
+		alert('OK');
+		var data = JSON.parse(xmlHttp.responseText); // Jsonをパースする場合
+		alert(xmlHttp.responseText);
+		//document.getElementById("ajaxid").firstChild.nodeValue = xmlHttp.responseText;
+	  }
+	  if(xmlHttp.readyState == 4 && xmlHttp.status == 0){
+		alert('NG')
+		document.getElementById("ajaxid").firstChild.nodeValue = xmlHttp.responseText;
+	  }
+  };
+  xmlHttp.send(null);
+}
+//*** デバッグ用
+function debug_init(){
+  var e,d;
+	e = document.createElement("input");
+    e.id = "ip2";
+	e.type = "button";
+	e.value = "ajaxテスト";
+	e.onclick = ajaxload;
+	document.getElementById("ajax-sample").appendChild(e);
+
+	e = document.createElement("form");
+	e.name = "ajaxfrom";
+	e.action = "#";
+	d = document.createElement("textarea");
+	d.style.cssText = "font-size:100%;font-family:'MS UI Gothic',sans-serif;";
+	d.setAttribute("id","ajaxid");
+	d.setAttribute("name","ntt");
+	d.setAttribute("rows","8");
+	d.setAttribute("cols","80");
+	d.innerHTML = "123";
+	e.appendChild(d);
+	document.getElementById("ajax-result").appendChild(e);
+}
+</script>
+</body>
+</html>
