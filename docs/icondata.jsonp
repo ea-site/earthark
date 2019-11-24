@@ -1,6 +1,6 @@
 callBackFunction({
-  //*** [歯車]アイコン
-  gear: "data:image/png;base64,"+
+//*** [歯車]アイコン
+gear: "data:image/png;base64,"+
 "iVBORw0KGgoAAAANSUhEUgAAADEAAAAQCAYAAAC/bJePAAAAAXNSR0IArs4c6QAAAAlwSFlzAAAL"+
 "EwAACxMBAJqcGAAAAAd0SU1FB+ABGgInKDSg4ZgAAAxbSURBVEgNAVAMr/MB////AAAAAAAAAAAA"+
 "AAAAAAAAAAAAAAAAAQEBcAAAAI8AAAAAAAAAcf///5AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"+
@@ -84,8 +84,8 @@ callBackFunction({
 "AKgSSywlAMAKK9kBAAssNAAwwyovFGCHK6+gkkpBv+QSjC65+IILLsD44ksvt9zSC5O83GKLLbXM"+
 "Ussus8xCC0E9JZPMMs40o0wzyCBzDDLFIMPMMccMwwwzxhgzTJzGCEMMMTz1RFA12mCDTTbXTDNN"+
 "oNFYE8000SRqDTXQUPMMNNKEtFBClFbKpUABAQA7",
-  // [読み込み中]アイコン
-  loading: "data:image/gif;base64,"+
+// [読み込み中]アイコン
+loading: "data:image/gif;base64,"+
 "R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh"+
 "/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklr"+
 "E2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAA"+
